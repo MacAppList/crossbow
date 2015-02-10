@@ -165,7 +165,7 @@
 	NSTimeInterval diff = [lastScroll timeIntervalSinceNow];
 	if (diff < -0.3)
 	{
-		float delta = [event deviceDeltaY];
+		float delta = [event scrollingDeltaY];
 		if (delta > 0)
 			[delegate imageClipPrevious:self];
 		else if (delta < 0)
